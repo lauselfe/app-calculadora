@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".DineroActivity">
+
+    <LinearLayout
+        android:id="@+id/menuabajo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorSecondary"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_sentiment_very_satisfied_black_24dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btndinero"
+        android:layout_width="137dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="72dp"
+        android:autofillHints="Farenheit"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@mipmap/dinero" />
+
+    <EditText
+        android:id="@+id/euros"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="Farenheit"
+        android:background="@color/colorPrimaryBright"
+        android:ems="10"
+        android:hint="Euros"
+        android:inputType="numberDecimal"
+        android:phoneNumber="false"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/dolares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btndinero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/dolares"
+        android:layout_width="270dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="Farenheit"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:hint="Dolares"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toEndOf="@+id/btntermometro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="60dp"
+        android:autofillHints="Farenheit"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/colorSecondaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dolares" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

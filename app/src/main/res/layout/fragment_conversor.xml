@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConversorFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="561dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/temperaturagrid"
+            android:layout_width="425dp"
+            android:layout_height="500dp"
+            android:background="@color/colorPrimaryDark"
+
+            android:backgroundTint="#E9F0CF"
+            android:onClick="clickear"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimaryDark"
+                android:text="Conversor Cº Fº"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/btnTemperatura"
+                android:layout_width="156dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimaryDark"
+                android:src="@mipmap/termometro" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/dinerogrid"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickear">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="183dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Conversor € a $"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/btnDinero"
+                android:layout_width="153dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:src="@mipmap/dinero" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pesogrid"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:background="@color/colorSecondaryDark"
+            android:onClick="clickear">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="247dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:text="I.M.C"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/btnBascula"
+                android:layout_width="153dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:background="@color/colorSecondaryDark"
+                android:src="@mipmap/icon" />
+        </TableRow>
+
+    </TableLayout>
+</FrameLayout>

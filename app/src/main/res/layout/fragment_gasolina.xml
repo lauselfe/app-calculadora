@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GasolinaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecondary">
+
+        <EditText
+            android:id="@+id/kilometros"
+            android:layout_width="204dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginEnd="91dp"
+            android:paddingLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Km"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/euroslitros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/litros" />
+
+        <EditText
+            android:id="@+id/litros"
+            android:layout_width="208dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="91dp"
+            android:paddingLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="L"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/kilometros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/euroslitros"
+            android:layout_width="204dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="23dp"
+            android:paddingLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="€/L"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kilometros" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="76dp"
+            android:layout_height="75dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#555555"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/euroslitros" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@color/colorSecondaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="186dp"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorSecondary"
+                    android:text="Consumo:" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="159dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/colorSecondary"
+                    android:layout_height="match_parent"
+                    android:text="Precio del viaje:" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/consumo"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondary"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/viaje"
+                    android:layout_width="184dp"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorSecondary"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:paddingLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondary"
+                    android:text="Cada 100km" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="174dp"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorSecondary"
+                    android:text="Cada 100 km" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ImcActivity">
+
+    <LinearLayout
+        android:id="@+id/menuabajo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorSecondary"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_sentiment_very_satisfied_black_24dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnbascula"
+        android:layout_width="137dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458"
+        app:srcCompat="@mipmap/basculapequenya" />
+
+    <EditText
+        android:id="@+id/kilos"
+        android:layout_width="270dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/metros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/metros"
+        android:layout_width="270dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Altura"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilos" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/colorPrimaryBright"
+        app:layout_constraintBottom_toTopOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imc" />
+
+    <TextView
+        android:id="@+id/imc"
+        android:layout_width="136dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnbascula"
+        app:layout_constraintTop_toBottomOf="@+id/metros" />
+
+    tools:layout_editor_absoluteX="425dp"
+        tools:layout_editor_absoluteY="286dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
